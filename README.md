@@ -1,5 +1,7 @@
+![adilroom](https://i.imgur.com/oitVbdJ.png)
 
-# Adil - Rooms Reservation System
+
+#  Adil - Rooms Reservation System
 
 This is a full-stack web application for room reservation system built using the MERN stack (MongoDB, ExpressJS, ReactJS, and NodeJS). It allows users to search and book available rooms, view reservations, and manage their bookings. The application includes features such as user authentication, real-time room availability, and admin management capabilities. The codebase is clean, well-organized, and easy to understand making it suitable for both learning and production use.
 
