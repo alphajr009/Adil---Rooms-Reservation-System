@@ -85,9 +85,9 @@ function Registerscreen() {
               value={name} onChange={(e) => { setname(e.target.value) }} />
             <input type="text" className="form-control" placeholder='Email'
               value={email} onChange={(e) => { setemail(e.target.value) }} />
-            <input type="text" className="form-control" placeholder='Password'
+            <input type="password" className="form-control" placeholder='Password'
               value={password} onChange={(e) => { setpassword(e.target.value) }} />
-            <input type="text" className="form-control" placeholder='Confirm Password'
+            <input type="password" className="form-control" placeholder='Confirm Password'
               value={cpassword} onChange={(e) => { setcpassword(e.target.value) }} />
           </div>
 
