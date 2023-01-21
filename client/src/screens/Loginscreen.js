@@ -44,7 +44,7 @@ function Loginscreen() {
                         <h1 className='bigh'>Login</h1>
                         <input type="text" className="form-control" placeholder='Email'
                             value={email} onChange={(e) => { setemail(e.target.value) }} />
-                        <input type="text" className="form-control" placeholder='Password'
+                        <input type="password" className="form-control" placeholder='Password'
                             value={password} onChange={(e) => { setpassword(e.target.value) }} />
                     </div>
 
