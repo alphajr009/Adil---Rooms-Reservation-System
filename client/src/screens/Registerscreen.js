@@ -6,6 +6,7 @@ import Warning from '../components/Warning'
 import Modal from 'react-bootstrap/Modal';
 import { Button, Result } from 'antd';
 import Swal from 'sweetalert2'
+import validator from 'password-validator';
 
 function Registerscreen() {
   const [name, setname] = useState('')
@@ -19,6 +20,27 @@ function Registerscreen() {
   const [warning, setwarning] = useState()
 
   async function register() {
+
+    const passwordSchema = new validator(); //check password is strong or not
+    passwordSchema
+      .is().min(8)                     //minimum length 8   characters             
+      .is().max(100)                   //maximum length 100 characters            
+      .has().uppercase()               //must have uppercase letters             
+      .has().lowercase()               //must have lowercase letters           
+      .has().digits()                  //must have digits       
+      .has().not().spaces()            //should not have spaces       
+
+
+    if (!passwordSchema.validate(password)) {
+      Swal.fire(
+        'Oops!',
+        ' Password is not strong',
+        'error'
+      )
+      return;
+    }
+
+
 
     if (password == cpassword) {
       const user = {
