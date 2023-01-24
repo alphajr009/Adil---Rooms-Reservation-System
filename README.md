@@ -23,6 +23,12 @@ Overall, the MERN stack provides a powerful and efficient technology stack for b
 &nbsp;&nbsp;
  <img src="https://res.cloudinary.com/postman/image/upload/t_team_logo/v1629869194/team/2893aede23f01bfcbd2319326bc96a6ed0524eba759745ed6d73405a3a8b67a8" alt="postmon" width="35" height="35"/> </a>
  
+ ## Configurations
+
+### MongoDB Connection
+Use this URL to connect to the Cluster `mongodb+srv://alpha09:alpha119911@cluster0.cd9yba2.mongodb.net/test?authMechanism=DEFAULT` 
+
+ 
  
  
 
