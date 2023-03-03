@@ -18,12 +18,12 @@ function Loginscreen() {
         }
         try {
             setloading(true)
-            const { data, status } = await axios.post('/api/users/login', user)
+            const { data, status } = await axios.post('/api/sellers/slogin', user)
             setloading(false)
 
             if (status === 200) {
                 localStorage.setItem('currentUser', JSON.stringify(data));
-                window.location.href = '/home'
+                window.location.href = '/dashboard'
             } else {
                 seterror(true);
             }
@@ -41,7 +41,7 @@ function Loginscreen() {
                 <div className='col-md-5 '>
                     {error && (<Error message='Invalid Credentials' />)}
                     <div className='bs'>
-                        <h1 className='bigh'>Login</h1>
+                        <h1 className='bigh'> Seller Login</h1>
                         <input type="text" className="form-control" placeholder='Email'
                             value={email} onChange={(e) => { setemail(e.target.value) }} />
                         <input type="text" className="form-control" placeholder='Password'
@@ -51,7 +51,7 @@ function Loginscreen() {
                     <button className='btn btn-primary mt-3' onClick={Login}>Login</button>
 
                     <div className="mt-5">
-                        <p className="mb-0 text-muted">Not registered yet? Click here to <a className='alha' href="/register">Register</a></p>
+                        <p className="mb-0 text-muted">Not registered yet? Click here to <a className='alha' href="/sregister">Register</a></p>
                     </div>
                 </div>
 
@@ -60,4 +60,4 @@ function Loginscreen() {
     )
 }
 
-export default Loginscreen
+export default Loginscreen  

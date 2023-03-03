@@ -29,7 +29,7 @@ function Registerscreen() {
       }
       try {
         setloading(true);
-        const result = await axios.post('/api/users/register', user).data;
+        const result = await axios.post('/api/sellers/sregister', user).data;
 
         setloading(false)
         Swal.fire({
@@ -41,7 +41,7 @@ function Registerscreen() {
           // cancelButtonColor: '#d33',
           confirmButtonText: 'Login'
         }).then(result => {
-          window.location.href = '/login'
+          window.location.href = '/slogin'
         })
 
 
@@ -80,7 +80,7 @@ function Registerscreen() {
           {warning && (<Warning message='Password does not match.' />)}
 
           <div className='bs'>
-            <h1 className='bigh'>Register</h1>
+            <h1 className='bigh'>Seller Register</h1>
             <input type="text" className="form-control" placeholder='Name'
               value={name} onChange={(e) => { setname(e.target.value) }} />
             <input type="text" className="form-control" placeholder='Email'
