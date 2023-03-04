@@ -12,6 +12,7 @@ function Navbar() {
 
 
             <a className="dropdown-item" href="/home">Home</a>
+                <a className="navbar-brand a1" href="/dashboard">Dashboard</a>
 
 
                 <button
