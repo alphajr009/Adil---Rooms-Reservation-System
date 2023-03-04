@@ -10,10 +10,12 @@ function Navbar() {
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
 
-            <a className="dropdown-item" href="/home">Home</a>
-                {/* {user.isUser ? :<a className="navbar-brand a1" href="/dashboard">Dashboard</a>} */}
 
-                {user.isUser ? <a className="dropdown-item" href="/home">Home</a> :<a className="navbar-brand a1" href="/dashboard">Dashboard</a>}
+            <a className="dropdown-item" href="/home">Home</a>
+                <a className="navbar-brand a1" href="/dashboard">Dashboard</a>
+
+                
+
 
                 <button
                     class="navbar-toggler"
