@@ -21,6 +21,4 @@ const userSchema = mongoose.Schema({
 
 const sellerModel = mongoose.model('sellers',userSchema)
 
-module.exports = sellerModel 
-
-//puka
+module.exports = sellerModel
