@@ -26,7 +26,6 @@ router.post("/slogin", async (req, res) => {
             const temp = {
                 name: user.name,
                 email: user.email,
-                isAdmin: user.isAdmin,
                 _id: user._id,
             }
             res.send(temp);

@@ -4,12 +4,12 @@ function Navbar() {
     const user = JSON.parse(localStorage.getItem('currentUser'));
     function logout() {
         localStorage.removeItem('currentUser');
-        window.location.href = '/login'
+        window.location.href = '/slogin'
     }
     return (
         <div>
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
-                {user.isUser ? <a className="dropdown-item" href="/home">Home</a> :<a className="navbar-brand a1" href="/dashboard">Dashboard</a>}
+                <a className="navbar-brand a1" href="/home">Adil</a>
                 <button
                     class="navbar-toggler"
                     type="button"
@@ -32,20 +32,20 @@ function Navbar() {
                                     <i className='fa fa-user' ></i> {user.name}
                                 </button>
                                 <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    {user.isUser ? <a className="dropdown-item" href="/home">Home</a> : <a className="dropdown-item" href="/dashboard" >Dashboard</a>}
-                                    <a className="dropdown-item" href="/profile">Profile</a>
-                                    {user.isAdmin ? <a className="dropdown-item" href="/admin" >Admin</a> : <a className="dropdown-item" href="/help" >Help</a>}
-                                    <a className="dropdown-item" href="/login" onClick={logout}>Logout</a>
+                                    <a className="dropdown-item" href="/home">Home</a>
+                                    <a className="dropdown-item" href="/profile">Dashboard</a>
+                                    {user.isAdmin ? <a className="dropdown-item" href="/admin" >Admin</a> : null}
+                                    <a className="dropdown-item" href="/slogin" onClick={logout}>Logout</a>
                                 </div>
                             </div>
                         </>
                         ) : (
                             <>
                                 <li className="nav-item active">
-                                    <a className="nav-link a1" href="/register">Register</a>
+                                    <a className="nav-link a1" href="/sregister">Register</a>
                                 </li>
                                 <li className="nav-item">
-                                    <a className="nav-link a1" href="/login">Login</a>
+                                    <a className="nav-link a1" href="/slogin">Login</a>
                                 </li>
 
                             </>

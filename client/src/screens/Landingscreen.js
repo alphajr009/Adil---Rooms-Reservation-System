@@ -16,6 +16,7 @@ function Landingscreen() {
             <h1 data-aos ='zoom-out' data-aos-duration="1000" className='mt-5' style={{color:'white'}} >"More Destinations. More Ease. More Affordable."</h1>
 
             <Link to = '/home' > <button className='btnlan' style={{color : 'black' , backgroundColor:'white'}}>Get Started</button></Link>
+            <Link to = '/slogin' > <button className='btnlan' style={{color : 'black' , backgroundColor:'white'}}>Selling</button></Link>
             
         </div>
 
