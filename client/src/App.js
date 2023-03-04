@@ -11,6 +11,7 @@ import Adminscreen from './screens/Adminscreen';
 import Landingscreen from './screens/Landingscreen';
 import SRegisterscreen from './screens/SRegisterscreen';
 import SLoginscreen from './screens/SLoginscreen';
+import Dashboard from './screens/Dashboard';
 
 function App() {
 
@@ -32,6 +33,7 @@ function App() {
           <Route path="/" element={<Landingscreen />} exact />
           <Route path="/sregister" element={<SRegisterscreen />} exact />
           <Route path="/slogin" element={<SLoginscreen />} exact />
+          <Route path="/dashboard" element={<Dashboard />} exact />
 
         </Routes>
       </BrowserRouter>
