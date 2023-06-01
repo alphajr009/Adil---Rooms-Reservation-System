@@ -3,7 +3,7 @@ mongoose.set('strictQuery', true);
 
 var mongoURL = 'mongodb+srv://alpha09:alpha119911@cluster0.cd9yba2.mongodb.net/Mern-rooms-adil'
 
-mongoose.connect(mongoURL ,{useUnifiedTopology : true ,useNewUrlParser : true ,})
+mongoose.connect(process.env.MONGODB_URI || mongoURL ,{useUnifiedTopology : true ,useNewUrlParser : true ,})
 
 
 
