@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build":"cd client && npm install",
+    "build2":"cd client && npm install react-scripts",
     "install-client":"cd client && npm run build",
-    "heroku-postbuild":"npm run install-client && npm run build",
+    "heroku-postbuild":"npm run install-client && npm run build && npm run build2",
     "start" : "node server.js",
     "client" : "cd client && npm start"
   },
@@ -19,6 +20,6 @@
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20",
     "stripe": "^11.6.0",
-    "uuid": "^9.0.0",
+    "uuid": "^9.0.0"
   }
 }
