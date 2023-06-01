@@ -19,6 +19,7 @@
     "mongoose": "^6.8.2",
     "nodemon": "^2.0.20",
     "stripe": "^11.6.0",
-    "uuid": "^9.0.0"
+    "uuid": "^9.0.0",
+    "react-scripts": "^5.0.1"
   }
 }
