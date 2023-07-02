@@ -7,26 +7,26 @@ const userSchema = mongoose.Schema({
         required: true
     },
 
-    email :{
+    email: {
         type: String, required: true
     },
 
-    password:{
+    password: {
         type: String, required: true
     },
 
-    isAdmin:{
-        type: Boolean, default:false
+    isAdmin: {
+        type: Boolean, default: false
     },
-    
-    isUser:{
-        type: Boolean, default:true
+
+    isUser: {
+        type: Boolean, default: true
     }
 
-},{
+}, {
     timestamps: true,
 })
 
-const userModel = mongoose.model('users',userSchema)
+const userModel = mongoose.model('users', userSchema)
 
 module.exports = userModel
